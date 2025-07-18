@@ -1,6 +1,6 @@
 import { Field, Label } from "./gui";
 import { lang } from "../lang";
-import { resize } from "../main";
+// import { resize } from "../main";
 import * as util from "./util";
 
 export class Controller extends Field {

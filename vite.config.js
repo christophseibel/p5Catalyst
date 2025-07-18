@@ -3,14 +3,14 @@ import { defineConfig } from "vite";
 import { p5GlobalsPlugin } from "./vite-p5-plugin.js";
 
 export default defineConfig({
-  plugins: [
-    // Only transform generator.js specifically
-    p5GlobalsPlugin({
-      instanceName: "this.p",
-      filePattern: /\/generator\.js$/, // More specific pattern
-      debug: true, // Enable to see what gets transformed
-    }),
-  ],
+  // plugins: [
+  //   // Only transform generator.js specifically
+  //   p5GlobalsPlugin({
+  //     instanceName: "this.p",
+  //     filePattern: /\/generator\.js$/, // More specific pattern
+  //     debug: true, // Enable to see what gets transformed
+  //   }),
+  // ],
 
   // Other Vite configuration
   build: {
@@ -22,6 +22,7 @@ export default defineConfig({
   },
 
   server: {
+    hmr: true, // Make sure this is enabled
     port: 3000,
     open: true,
   },

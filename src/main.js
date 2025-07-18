@@ -59,7 +59,7 @@ const sketch = (p) => {
     lang.setup("en");
 
     // Pass p5 instance to Generator
-    generator = new Generator(p);
+    generator = new Generator(p, 255);
 
     setGUI(new GUIForP5(p));
     createGUI(generator);
@@ -240,7 +240,7 @@ function generateSSID() {
 }
 
 // Export resize function for external use
-export function resize(w, h) {
+function resize(w, h) {
   if (w == pw && h == ph) return;
   if (w < 1 || h < 1) return;
 

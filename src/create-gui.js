@@ -11,34 +11,34 @@ export function createGUI(generator) {
 
   // ------------------------------ FORMAT ------------------------------
   gui.addTitle(2, "LANG_FORMAT", false);
-  gui.addController(
-    new controller.ResolutionSelect(
-      gui,
-      "Presets:",
-      resolutionOptions,
-      0,
-      (controller, value) => {
-        const resBox = gui.getController("resolutionTextboxes");
-        if (resBox) resBox.setValueOnlyDisplay(pw, ph);
-        generator.setup();
-      }
-    )
-  );
-  gui.addController(
-    new controller.ResolutionTextboxes(
-      gui,
-      pw,
-      ph,
-      (controller, value) => {
-        if (value.w * value.h < sq(10000) && (value.w != pw || value.h != ph)) {
-          generator.setup();
-        }
-      },
-      (controller) => {
-        controller.setValueOnlyDisplay(pw, ph);
-      }
-    )
-  );
+  // gui.addController(
+  //   new controller.ResolutionSelect(
+  //     gui,
+  //     "Presets:",
+  //     resolutionOptions,
+  //     0,
+  //     (controller, value) => {
+  //       const resBox = gui.getController("resolutionTextboxes");
+  //       if (resBox) resBox.setValueOnlyDisplay(pw, ph);
+  //       generator.setup();
+  //     }
+  //   )
+  // );
+  // gui.addController(
+  //   new controller.ResolutionTextboxes(
+  //     gui,
+  //     pw,
+  //     ph,
+  //     (controller, value) => {
+  //       if (value.w * value.h < sq(10000) && (value.w != pw || value.h != ph)) {
+  //         generator.setup();
+  //       }
+  //     },
+  //     (controller) => {
+  //       controller.setValueOnlyDisplay(pw, ph);
+  //     }
+  //   )
+  // );
 
   // ------------------------------ APPEARANCE ------------------------------
   // gui.addDivider();

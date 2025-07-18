@@ -2,14 +2,15 @@
 export class Generator {
   static name = "p5Catalyst Generator";
 
-  constructor(p5Instance) {
+  constructor(p5Instance, cola) {
     this.p = p5Instance;
+    this.cola = cola;
 
     this.palette = [
-      color("#7685F7"),
-      color("#BFFB50"),
-      color("#000000"),
-      color("#FFFFFF"),
+      this.p.color("#7685F7"),
+      this.p.color("#BFFB50"),
+      this.p.color("#000000"),
+      this.p.color("#FFFFFF"),
     ];
 
     // Set initial color from palette
@@ -18,19 +19,19 @@ export class Generator {
 
   setup() {
     // You can write normal p5 code here
-    colorMode(this.p.HSB);
-    noStroke();
+    this.p.colorMode(this.p.HSB);
+    this.p.noStroke();
   }
 
   draw(doSVGToo = false) {
     // Manual instance calls for now
-    background(255);
+    this.p.background(0);
 
-    let t = millis() * 0.001;
-    let x = width / 2 + sin(t) * 100;
-    let y = height / 2 + cos(t * 0.7) * 50;
+    let t = this.p.millis() * 0.001;
+    let x = this.p.width / 2 + this.p.sin(t) * 100;
+    let y = this.p.height / 2 + this.p.cos(t * 0.7) * 50;
 
-    fill(this.col);
-    circle(x, y, min(width, height) / 10);
+    this.p.fill(this.col);
+    this.p.circle(x, y, this.p.min(this.p.width, this.p.height) / 10);
   }
 }
