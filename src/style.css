@@ -1098,22 +1098,22 @@ input[type='checkbox']:checked::before {
 }
 
 .dark-mode-button--light {
-	background-image: url('/src/lib/assets/dark-mode-button/light-mode-icon.svg');
+	background-image: url('assets/dark-mode-button/light-mode-icon.svg');
 }
 .dark-mode-button--dark {
-	background-image: url('/src/lib/assets/dark-mode-button/dark-mode-icon.svg');
+	background-image: url('assets/dark-mode-button/dark-mode-icon.svg');
 }
 .dark-mode-button--auto {
-	background-image: url('/src/lib/assets/dark-mode-button/auto-mode-icon.svg');
+	background-image: url('assets/dark-mode-button/auto-mode-icon.svg');
 }
 body:where(.dark-mode) .dark-mode-button--light {
-	background-image: url('/src/lib/assets/dark-mode/dark-mode-button/light-mode-icon.svg');
+	background-image: url('assets/dark-mode-button/light-mode-icon.svg');
 }
 body:where(.dark-mode) .dark-mode-button--dark {
-	background-image: url('/src/lib/assets/dark-mode/dark-mode-button/dark-mode-icon.svg');
+	background-image: url('assets/dark-mode-button/dark-mode-icon.svg');
 }
 body:where(.dark-mode) .dark-mode-button--auto {
-	background-image: url('/src/lib/assets/dark-mode/dark-mode-button/auto-mode-icon.svg');
+	background-image: url('assets/dark-mode-button/auto-mode-icon.svg');
 }
 
 /********************************* VIDEO LOADING *********************************/
@@ -1196,40 +1196,40 @@ a:hover {
 }
 
 .die-icon--1 {
-	background-image: url('/src/lib/assets/dice/die\ \(1\).svg');
+	background-image: url('assets/dice/die (1).svg');
 }
 .die-icon--2 {
-	background-image: url('/src/lib/assets/dice/die\ \(2\).svg');
+	background-image: url('assets/dice/die (2).svg');
 }
 .die-icon--3 {
-	background-image: url('/src/lib/assets/dice/die\ \(3\).svg');
+	background-image: url('assets/dice/die (3).svg');
 }
 .die-icon--4 {
-	background-image: url('/src/lib/assets/dice/die\ \(4\).svg');
+	background-image: url('assets/dice/die (4).svg');
 }
 .die-icon--5 {
-	background-image: url('/src/lib/assets/dice/die\ \(5\).svg');
+	background-image: url('assets/dice/die (5).svg');
 }
 .die-icon--6 {
-	background-image: url('/src/lib/assets/dice/die\ \(6\).svg');
+	background-image: url('assets/dice/die (6).svg');
 }
 body:where(.dark-mode) .die-icon--1 {
-	background-image: url('/src/lib/assets/dark-mode/dice/die\ \(1\).svg');
+	background-image: url('assets/dice/die (1).svg');
 }
 body:where(.dark-mode) .die-icon--2 {
-	background-image: url('/src/lib/assets/dark-mode/dice/die\ \(2\).svg');
+	background-image: url('assets/dice/die (2).svg');
 }
 body:where(.dark-mode) .die-icon--3 {
-	background-image: url('/src/lib/assets/dark-mode/dice/die\ \(3\).svg');
+	background-image: url('assets/dice/die (3).svg');
 }
 body:where(.dark-mode) .die-icon--4 {
-	background-image: url('/src/lib/assets/dark-mode/dice/die\ \(4\).svg');
+	background-image: url('assets/dice/die (4).svg');
 }
 body:where(.dark-mode) .die-icon--5 {
-	background-image: url('/src/lib/assets/dark-mode/dice/die\ \(5\).svg');
+	background-image: url('assets/dice/die (5).svg');
 }
 body:where(.dark-mode) .die-icon--6 {
-	background-image: url('/src/lib/assets/dark-mode/dice/die\ \(6\).svg');
+	background-image: url('assets/dice/die (6).svg');
 }
 
 /********************************* CANVAS SECTION *********************************/
